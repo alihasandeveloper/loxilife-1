@@ -1,0 +1,60 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Variant 
+$RajdhaniFont: 'Rajdhani', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+$primaryColor: #D9A14C;
+$fontColor: #FFFFFF;
+$blackColor: #23262D;
+$bgColor: #F4F4F4;
+
+// Comon Style
+*::selection {
+    background-color: $primaryColor;
+    color: #fff;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-btn {
+    .primary-btn {
+        border: 0;
+        background-color: $primaryColor;
+        padding: 14px 25px;
+        border: 1.5px solid transparent;
+        transition: 0.5s;
+        a {
+            text-decoration: none;
+            color: $fontColor;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $RajdhaniFont;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 1.1px;
+        }
+        &:hover {
+            background: transparent;
+            border: 1.5px solid $primaryColor;
+            filter: drop-shadow(0 0 1px $primaryColor);
+            a {
+                color: $primaryColor;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+// Sass link 
+
+@import "header";
+@import "hero-section";

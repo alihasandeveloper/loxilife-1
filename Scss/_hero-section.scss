@@ -1,0 +1,131 @@
+.hero-section {
+    .row {
+        .hero-section-item-1 {
+            height: 680px;
+            h1 {
+                font-size: 80px;
+                color: $fontColor;
+                font-family: $RajdhaniFont;
+                font-weight: 700;
+                line-height: 100px;
+            }
+            p {
+                color: $fontColor;
+                font-size: 16px;
+                font-family: $Rubik;
+                line-height: 30px;
+                letter-spacing: 1.1px;
+            }
+            .hero-section-last {
+                .hero-section-last-img {
+                    
+                    .img-1 {
+                        margin-right: -15px;
+                    }
+                    .img-2 {
+                        margin-right: -15px;
+                    }
+                    .img-3 {
+                        margin-right: -15px;
+                    }
+                }
+            }
+            .hero-section-last-text {
+                h1 {
+                    font-size: 32px;
+                    line-height: 41px;
+                }
+                
+            }
+        }
+        .hero-section-item-2 {
+            
+            h6 {
+                color: $primaryColor;
+                font-family: $RajdhaniFont;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                text-transform: uppercase;
+                span {
+                    margin-right: 10px;
+                }
+            }
+            .center {
+                position: relative;
+                .btn-prev {
+                    button {
+                        color: $primaryColor;
+                        border: 2px solid $primaryColor;
+                        background-color: transparent;
+                        padding: 10px;
+                        height: 60px;
+                        width: 60px;
+                        transition: 0.5s;
+                        position: absolute;
+                        bottom: -100px;
+                        
+                        &:hover {
+                            color: $fontColor;
+                            background-color: $primaryColor;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                .btn-next {
+                    button {
+                        color: $primaryColor;
+                        border: 2px solid $primaryColor;
+                        background-color: transparent;
+                        padding: 10px;
+                        height: 60px;
+                        width: 60px;
+                        position: absolute; 
+                        bottom: -100px;
+                        left: 70px;
+                        &:hover {
+                            color: $fontColor;
+                            background-color: $primaryColor;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                .slick-item {
+                    .hero-card {
+                        position: relative;
+                        .card-link {
+                            position: absolute;
+                            bottom: 0px;
+                            width: 100%;
+                            transform: scale(0);
+                            transition: 0.5s;
+                            a {
+                                display: block;
+                                background-color: $primaryColor;
+                                padding: 10px 20px;
+                                color: $fontColor;
+                                text-decoration: none;
+                                font-family: $RajdhaniFont;
+                                font-size: 16px;
+                                font-weight: 700;
+                                letter-spacing: 1.1px;
+                                transition: 0.5s;
+                                &:hover {
+                                    text-decoration: underline;
+                                    transition: 0.5s;
+                                }
+                            }
+                            
+                        }
+
+                        &:hover {
+                            .card-link {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
