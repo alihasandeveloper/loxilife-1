@@ -43,3 +43,4 @@ $('.center').slick({
     // instead of a settings object
   ]
 });
+

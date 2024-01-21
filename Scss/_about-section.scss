@@ -1,0 +1,135 @@
+.room-wallpaper {
+    overflow: hidden;
+
+    .room-img {
+        overflow: hidden;
+
+        .img-1 {
+
+            max-width: 276px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .img-2 {
+            margin-top: 35px;
+            max-width: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        img {
+            transition: 0.5s;
+
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+}
+
+.counter-card {
+    position: absolute;
+    bottom: 30px;
+    left: 71px;
+    text-align: center;
+    background-color: $primaryColor;
+    padding: 20px 30px;
+    color: $fontColor;
+
+    h2 {
+        font-size: 48px;
+        color: $fontColor;
+        font-weight: 800;
+        font-family: $RajdhaniFont;
+        line-height: 60px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 30px;
+        font-family: $Rubik;
+    }
+}
+
+
+h6 {
+    color: $primaryColor;
+    font-family: $RajdhaniFont;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    span {
+        margin-right: 10px;
+    }
+}
+
+h2 {
+    font-family: $RajdhaniFont;
+    letter-spacing: 1.1px;
+    font-weight: 800;
+    font-size: 48px;
+    color: $blackColor;
+}
+
+p {
+    font-family: $Rubik;
+    font-size: 16px;
+    color: #616670;
+    letter-spacing: 1.1px;
+}
+
+.about-section-text {
+    border-left: 2px solid $primaryColor;
+    position: relative;
+
+    text-card {
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+            font-family: $RajdhaniFont;
+        }
+    }
+
+    .top-circle {
+        position: absolute;
+        background-color: $primaryColor;
+        width: 10px;
+        top: -5px;
+        left: -6px;
+        height: 10px;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+
+    .bottom-circle {
+        position: absolute;
+        background-color: $primaryColor;
+        width: 10px;
+        bottom: -5px;
+        left: -6px;
+        height: 10px;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .counter-card {
+        padding: 9px;
+        bottom: 0px;
+        left: 3px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+}

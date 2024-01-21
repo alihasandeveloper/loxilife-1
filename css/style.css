@@ -161,6 +161,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .hero-section .row .hero-section-item-2 h6 span {
   margin-right: 10px;
@@ -202,12 +203,20 @@ body {
 }
 .hero-section .row .hero-section-item-2 .center .slick-item .hero-card {
   position: relative;
+  overflow: hidden;
+}
+.hero-section .row .hero-section-item-2 .center .slick-item .hero-card img {
+  overflow: hidden;
+  transition: 0.5s;
+}
+.hero-section .row .hero-section-item-2 .center .slick-item .hero-card img:hover {
+  transform: scale(1.05);
 }
 .hero-section .row .hero-section-item-2 .center .slick-item .hero-card .card-link {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  transform: scale(0);
+  margin-bottom: -45px;
   transition: 0.5s;
 }
 .hero-section .row .hero-section-item-2 .center .slick-item .hero-card .card-link a {
@@ -227,5 +236,129 @@ body {
   transition: 0.5s;
 }
 .hero-section .row .hero-section-item-2 .center .slick-item .hero-card:hover .card-link {
-  transform: scale(1);
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-next button {
+    display: none;
+  }
+  .btn-prev button {
+    display: none;
+  }
+}
+.room-wallpaper {
+  overflow: hidden;
+}
+.room-wallpaper .room-img {
+  overflow: hidden;
+}
+.room-wallpaper .room-img .img-1 {
+  max-width: 276px;
+  width: 100%;
+  overflow: hidden;
+}
+.room-wallpaper .room-img .img-2 {
+  margin-top: 35px;
+  max-width: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.room-wallpaper .room-img img {
+  transition: 0.5s;
+}
+.room-wallpaper .room-img:hover img {
+  transform: scale(1.05);
+}
+
+.counter-card {
+  position: absolute;
+  bottom: 30px;
+  left: 71px;
+  text-align: center;
+  background-color: #D9A14C;
+  padding: 20px 30px;
+  color: #FFFFFF;
+}
+.counter-card h2 {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 60px;
+}
+.counter-card p {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Rubik", sans-serif;
+}
+
+h6 {
+  color: #D9A14C;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+h6 span {
+  margin-right: 10px;
+}
+
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 1.1px;
+  font-weight: 800;
+  font-size: 48px;
+  color: #23262D;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: #616670;
+  letter-spacing: 1.1px;
+}
+
+.about-section-text {
+  border-left: 2px solid #D9A14C;
+  position: relative;
+}
+.about-section-text text-card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  font-family: "Rajdhani", sans-serif;
+}
+.about-section-text .top-circle {
+  position: absolute;
+  background-color: #D9A14C;
+  width: 10px;
+  top: -5px;
+  left: -6px;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.about-section-text .bottom-circle {
+  position: absolute;
+  background-color: #D9A14C;
+  width: 10px;
+  bottom: -5px;
+  left: -6px;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .counter-card {
+    padding: 9px;
+    bottom: 0px;
+    left: 3px;
+  }
+  h2 {
+    font-size: 35px;
+  }
 }

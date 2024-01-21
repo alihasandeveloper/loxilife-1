@@ -47,6 +47,7 @@
                 font-size: 18px;
                 line-height: 26px;
                 text-transform: uppercase;
+                letter-spacing: 5px;
                 span {
                     margin-right: 10px;
                 }
@@ -93,11 +94,19 @@
                 .slick-item {
                     .hero-card {
                         position: relative;
+                        overflow: hidden;
+                        img {
+                            overflow: hidden;
+                            transition: 0.5s;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                        }
                         .card-link {
                             position: absolute;
                             bottom: 0px;
                             width: 100%;
-                            transform: scale(0);
+                            margin-bottom: -45px;
                             transition: 0.5s;
                             a {
                                 display: block;
@@ -120,7 +129,7 @@
 
                         &:hover {
                             .card-link {
-                                transform: scale(1);
+                                margin-bottom: 0px;
                             }
                         }
                     }
@@ -128,4 +137,20 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 576px) {
+    .btn-next {
+        button {
+
+            display: none;
+        }
+    }
+    .btn-prev {
+        button {
+
+            display: none;
+        }
+    }
+
 }
